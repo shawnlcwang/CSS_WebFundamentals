@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>A simple page</title>
+	<!-- <style type="text/css">
+		body{ background-color:blanchedalmond}
+	</style> -->
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="style2.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="reset.css" type="text/css" /> -->
+</head>
+<body>
+	<!-- CSS: Basics  -->
+	<!-- <h1>Today's Quote</h1>
+	<div>
+		<p>
+			"... there is no freedom quite like the freedom of being constantly underestimated". 
+			<br />
+			Scott Lynch, <em>The Lies of Locke Lamora</em>
+		</p>
+	</div> -->
+	<!-- <h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<div class="quotation">A div</div>
+	<p id="content">A paragraph</p>
+	<div>
+		<p class="quotation">A paragraph inside a div</p>
+	</div>	 -->
+
+	<!-- CSS: Cascade | Specificity | Inheritance  -->
+    <!-- <h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<div>A div <em>emphasis</em><strong>strong</strong></div>
+	<p>A paragraph</p>
+	<div>
+		<p id="content" >A paragraph inside a div <em>emphasis</em><strong>strong</strong></p>
+	</div>	
+	<a href="page.html">Refresh</a> -->
+
+	<!-- CSS: Box Model  -->
+    <!-- <ul class="menu">
+        <li>
+            <a href="http://www.w3.org/Style/CSS/">CSS Specifications</a>        
+        </li>
+        <li>
+            <a href="http://www.csszengarden.com/">CSS Zen Garden</a>
+        </li>   
+        <li>
+            <a href="http://www.blueprintcss.org/">Blueprint</a>
+        </li> 
+        <li>
+            <a href="http://developer.yahoo.com/yui/">YUI</a>
+        </li>
+	</ul>     -->
+	
+	<!-- CSS: Text Display -->
+	<!-- <h1>Using FileVersionInfo</h1>
+    <div class="content">
+        <p>
+            Getting the version number of any managed / unmanaged DLL or executable in .NET
+            1.0, if I recall correctly, required some magic incantations with PInvoke.
+        </p>
+        <p>
+            I just discovered the FileVersionInfo class from System.Diagnostics:
+        </p>
+        <pre class="code">
+        FileVersionInfo versionInfo;
+        versionInfo = FileVersionInfo.GetVersionInfo(@"e:\win2003\system32\svchost.exe");
+        MessageBox.Show(versionInfo.ToString());
+        </pre>
+        <p>
+            To use the class then, all you need to do is:
+            <ol>
+                <li>Invoke the static GetVersionInfo method</li>
+                <li>Start using the properties of the resulting object</li>
+            </ol>
+        </p>
+        <p>
+            File version is a 64 bit number. 
+            <ul>
+                <li>The first 16 bits are the major number</li>
+                <li>The next 16 bits are the minor number</li>
+                <li>The third set of 16 bits are the build number</li>
+                <li>The last 16 bits are the private build number</li>
+            </ul>
+        </p>
+    </div>
+    <div class="copyright">
+    (c) 2005 Copyright notice
+	</div> -->
+	
+	<!-- CSS: Layout -->
+	<div id="header">
+        <h1>CSS Fundamentals</h1>
+        <p>Shawn Wang</p>
+	</div>
+	<div id="links">
+		<a href="">Link</a><br/>
+		<a href="">Link</a><br/>
+		<a href="">Link</a><br/>
+		<a href="">Link</a><br/>
+	</div>
+	<div id="content">
+        <div id="buttons">
+            <input name="b1" value="button 1" type="button" />
+            <input name="b2" value="button 2" type="button" />
+            <input name="b3" value="button 3" type="button" />
+        </div>
+        <p>
+            The first step in understanding how to position elements is to understand the fundamental
+            model of CSS—the box model.
+        </p>
+        <h2>
+            The Box Model</h2>
+        <p>
+            Every element you place on a page creates a box. You cannot always see the boundaries
+            and the borders of the boxes you create, but the boxes are there. A <em>div</em>
+            element creates a box, as do <em>h1</em>,<em>img</em>, <em>span</em>, and <em>td</em>
+            elements. Each box has properties you can set with CSS. I’ve illustrated some of
+            these properties in Figure 1.</p>
+        <p>
+            <img id="figure1" alt="" src="logo.jpg"
+                title=""><br>
+            <strong>Figure 1 Border, padding, and margin</strong>
+            <div class="clear">
+            </div>
+        </p>
+        <!-- <p style="clear:both"> -->
+		<div class="clear">
+		</div>
+		<p>
+            The <em>padding</em> of a box is the distance between the content of the box and
+            the box’s border, and the <em>margin</em> is the distance between a box and any
+            adjacent element. In other words, padding adds space inside the border, while a
+            margin adds space outside the border. In the following CSS, I set both the padding
+            and the margin to a distance of 10 pixels. This is why you can see so much white
+            space in Figure 1.
+        </p>
+        <p>
+            The border surrounding every element is not visible by default, but by using CSS
+            I can change the color of an element’s border, as well as the thickness and line
+            style the browser uses when drawing the border. What you see in Figure 1 is the
+            result of a style rule telling the browser to draw a solid, thin, red line around
+            the box that each div element creates.
+        </p>
+    </div>
+    <div id="authorinfo">
+        <h3>
+			About the Author
+        </h3>
+        <div>
+            <div>
+                <img alt="" height="77" src="author.jpg">
+            </div>
+            <div>
+                <p>
+                    Shawn Wang is a Geospatial Developer & Founder of Ownagon.
+				</p>
+				<h4>
+					Find Scott on:
+				</h4>
+                <ul>
+                    <li>Twitter - <a href="https://twitter.com/shawnlcwang">@shawnlcwang</a></li>
+                    <li><a href="http://shawnlcwang">Shawn's Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+	</div>
+
+</body> 
+</html>
